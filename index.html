@@ -50,7 +50,8 @@
         
         // Show verification page after a short delay
         setTimeout(function() {
-            window.location.href = 'verify-success.html';
+            // Add timestamp to prevent caching
+            window.location.href = 'verify-success.html?' + new Date().getTime();
         }, 1500);
     </script>
 </body>
